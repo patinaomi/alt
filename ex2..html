@@ -14,16 +14,23 @@
             document.write("<br><br>");
         }
 
-        function calculImc() {
-            var imc = peso / (altura * altura);
+        function calculImc(altura, peso) {
+            return peso / (altura * altura);
         }
 
         function soma(num1, num2) {
-            var total = num1 + num2; 
-            document.write(total);
+           return num1 + num2; 
         }
 
-        soma(5,6);
+        // document.write("Seu imc é de: " + Math.round(calculImc(1.58, 58)));
+        
+        var nome = prompt("Informe o seu nome: ");
+        var altura = prompt(nome + ", informe sua altura:" );
+        var peso = prompt(nome + ", informe seu peso:" );
+
+        var imc = calculImc(altura, peso);
+
+        document.write(nome + ", seu imc é de " + Math.round(imc));
         
 
     </script>

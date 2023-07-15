@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <title>Document</title>
+    <title>Futebol</title>
 </head>
 <body>
     
@@ -19,10 +19,13 @@
             pulaLinha();
         }
 
-        mostra("Hello!");
+        var vitorias = parseInt(prompt("Entre com o número de vitórias: "));
+        var empates = parseInt(prompt("Entre com o número de empates: "));
+        var pontos = (vitorias * 3) + empates;
 
-        mostra("ai que REIVA");
+        document.write("Os pontos do seu time é: " + pontos);
 
     </script>
+
 </body>
 </html>
