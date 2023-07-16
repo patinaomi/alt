@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Média idade</title>
+</head>
+<body>
+    
+    <script>
+
+
+        var totalIdades = 0;
+        var contador = 1;
+        var totalFamiliares = parseInt(prompt("Quantidade de familiares?"));
+
+        while(contador <=totalFamiliares) {
+            var idade = parseInt(prompt("Qual a idade do familiar?"));
+            totalIdades = totalIdades + idade;
+            contador++
+        }
+
+        document.write("A idade total é: " + totalIdades + "<br>");
+        document.write("Qtd de familiares: " + totalFamiliares + "<br>");
+
+        var mediaIdades = totalIdades / totalFamiliares;
+        document.write("A média de idade é: " + mediaIdades + "<br>");
+
+
+
+
+    </script>
+    
+</body>
+</html>

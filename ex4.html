@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Futebol</title>
+</head>
+<body>
+    
+    <script>
+
+        function calculaCopa() {
+            while(anoCopa <= anoLimite) {
+                document.write("Teve copa em: " + anoCopa + "<br>");
+                anoCopa = anoCopa + 4;
+            }
+        }
+
+        var anoCopa = parseInt(prompt("Digite um ano: "));
+        var anoLimite = parseInt(prompt("Digite um ano atual: "));
+
+        calculaCopa();
+
+
+    </script>
+    
+</body>
+</html>

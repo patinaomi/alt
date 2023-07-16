@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Tabuada</title>
+</head>
+<body>
+    
+    <script>
+
+
+    var multiplicador = parseInt(prompt("Escolha a tabuada que você quer: "));
+    var contador = 1;
+
+    while(contador <= 10) {
+        document.write(contador * multiplicador + "<br>");
+        contador++
+    }
+
+    for(contador = 1; contador <= 10; contador++) {
+        document.write(contador * multiplicador + "<br>");
+    }
+
+
+
+    </script>
+    
+</body>
+</html>
