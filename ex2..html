@@ -10,27 +10,32 @@
 <body>
     
     <script>
-        function pulaLinha() {
-            document.write("<br><br>");
+
+        function calculaImc() {
+            var imc = peso / (altura * altura);
+
+            if(imc < 16) {
+                document.write(nome + ", seu imc é de "+ imc.toFixed(2) + ", você está muito abaixo do peso normal.");
+            } else if (imc < 18.5) {
+                document.write(nome + ", seu imc é de "+ imc.toFixed(2) + ", você está abaixo do peso normal.");
+            } else if (imc < 24) {
+                document.write(nome + ", seu imc é de "+ imc.toFixed(2) + ", você está no peso normal.");
+            } else if (imc < 30) {
+                document.write(nome + ", seu imc é de "+ imc.toFixed(2) + ", você está acima do peso normal.");
+            } else if (imc < 35) {
+                document.write(nome + ", seu imc é de "+ imc.toFixed(2) + ", você está com obesidade grau I.");
+            } else if (imc < 40) {
+                document.write(nome + ", seu imc é de "+ imc.toFixed(2) + ", você está com obesidade grau II.");
+            } else {
+                document.write(nome + ", seu imc é de "+ imc.toFixed(2) + ", você está com obesidade grau III.");
+            }
         }
 
-        function calculImc(altura, peso) {
-            return peso / (altura * altura);
-        }
-
-        function soma(num1, num2) {
-           return num1 + num2; 
-        }
-
-        // document.write("Seu imc é de: " + Math.round(calculImc(1.58, 58)));
-        
-        var nome = prompt("Informe o seu nome: ");
+        var nome = prompt("Olá, digite seu nome: ");
         var altura = prompt(nome + ", informe sua altura:" );
         var peso = prompt(nome + ", informe seu peso:" );
 
-        var imc = calculImc(altura, peso);
-
-        document.write(nome + ", seu imc é de " + Math.round(imc));
+        calculaImc(altura, peso, nome);
         
 
     </script>

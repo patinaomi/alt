@@ -10,14 +10,20 @@
 <body>
     
     <script>
-        function pulaLinha() {
-            document.write("<br><br>");
-        }
 
-        function mostra(frase) {
-            document.write(frase);
-            pulaLinha();
+        function adivinha() {
+            if (chute == numeroPensado) {
+                document.write("Parabéns, você acertou!");
+            } else {
+                document.write("Você errou, o número pensado foi " + numeroPensado);
+            }
         }
+        
+        var numeroPensado = 5;
+        var chute = parseInt(prompt("Digite seu palpite: "));
+
+        adivinha(numeroPensado, chute);
+        
 
     </script>
     
