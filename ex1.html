@@ -23,18 +23,18 @@
             var chute = parseInt(prompt("Digite seu palpite: "));
     
             if (chute == numeroPensado) {
-                document.write("Parabéns, você acertou!");
+                document.write("Parabéns, você acertou!<br>");
+                break;
+
             } else {
                 if(chute > numeroPensado) {
-                    document.write("Você errou, o palpite foi maior que o número pensado.");
+                    document.write("Você errou, o palpite foi maior que o número pensado.<br>");
                 } else {
-                    document.write("Você errou, o palpite foi menor que o número pensado.");
+                    document.write("Você errou, o palpite foi menor que o número pensado.<br>");
                 }
             }
             tentativas++
-        } 
-
-        
+        }         
         
 
     </script>
