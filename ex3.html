@@ -10,20 +10,23 @@
 <body>
     
     <script>
-        function pulaLinha() {
-            document.write("<br><br>");
+        function calculaPontos() {
+            if (pontos > 28) {
+                document.write("Quantidade total de pontos: " + pontos +", seu time está melhor do que o ano passado.")
+            } if (pontos < 28) {
+                document.write("Quantidade total de pontos: " + pontos +", seu time está pior do que o ano passado.")
+            } if (pontos == 28) {
+                document.write("Quantidade total de pontos: " + pontos +", seu time está igual ao ano passado.")
+            }
         }
-
-        function mostra(frase) {
-            document.write(frase);
-            pulaLinha();
-        }
+        
 
         var vitorias = parseInt(prompt("Entre com o número de vitórias: "));
         var empates = parseInt(prompt("Entre com o número de empates: "));
         var pontos = (vitorias * 3) + empates;
 
-        document.write("Os pontos do seu time é: " + pontos);
+        calculaPontos();
+
 
     </script>
 
