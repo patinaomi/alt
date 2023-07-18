@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        * {
+            text-align: center;
+            margin: 10%;
+        }
+
+    </style>
+<body>
+
+    <button class="botao" onclick="alteraCor()">Clica aqui</button>
+    <div id="teste" onmouseover="viraVermelho()" onmousedown="viraAzul()" style="margin: auto auto; width: 80%; height: 200px; background-color: aquamarine;"></div>
+
+    <button onclick="adicionaTexto()">Append Teste</button>
+    <script>
+        function viraVermelho(){
+            let div = document.getElementById("teste");
+            div.style.backgroundColor = "red";
+        }
+        function viraAzul(){
+            let div = document.getElementById("teste");
+            div.style.backgroundColor = "blue";
+        }
+
+        function adicionaTexto() {
+            let p = document.getElementById("teste");
+            p.append("Adiciona texto");
+        }
+
+    </script>
+</body>
+</html>

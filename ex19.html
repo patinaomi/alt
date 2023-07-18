@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+
+    </style>
+<body>
+    <input type="text" id="campo1">
+
+    <button onclick="palpite()">Palpite</button>
+    <p id="resultado"></p>
+
+    <script>
+        var sorteio = Math.round(Math.random() * 10);
+        
+        function palpite() {
+            var numero = document.getElementById("campo1").value;
+            var tentativa = 1;
+
+            
+            while(tentativa <= 3) {
+                if(numero > 10 || numero < 0) {
+
+                    document.getElementById("resultado").innerHTML = "Digite um número maior que 0"; 
+                    break;
+
+                } else if(numero == sorteio) {
+                        document.getElementById("resultado").innerHTML = "parabéns você acertou, o número pensado foi " + sorteio; 
+                        break;
+            
+                    } else {
+                        if(numero > sorteio) {
+                            document.getElementById("resultado").innerHTML = "você errou, o número pensado foi maior que o sorteado"; 
+                            tentativa++;            
+                            
+                        } else {
+                            document.getElementById("resultado").innerHTML = "você errou, o número pensado foi menor que o sorteado"; 
+                            tentativa++;            
+                        }
+                    }
+
+                }
+                
+            }
+            alert("ERROU!");
+        
+
+    </script>
+</body>
+</html>
