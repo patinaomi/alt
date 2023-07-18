@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h3>Digite um ano que teve copa:</h3>
+    <input type="text" id="campo1">
+    <button onclick="calcular()">S2</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calcular() {
+            var copa = parseInt(document.getElementById("campo1").value);
+            var anoAtual = 2023;
+            var concat = "";
+            var conta = copa + 4;
+
+            while(copa <= anoAtual) {
+                document.getElementById("resultado").innerHTML = concat+= + copa + "<br>";
+
+               copa = copa+4;
+            } 
+
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

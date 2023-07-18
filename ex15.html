@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Exercício</h1>
+
+    <h2>Tabuada</h2>
+    <input type="text" id="campo1">
+    <button onclick="multiplicar()">Multiplicar</button>
+
+    <h3>Resultado</h3>
+    <p id="resultado"></p>
+
+    <script>
+        function multiplicar() {
+            var numero = document.getElementById("campo1").value;
+            var texto = ""; //pra guardar os resultados
+            var contador = 1;
+            
+            if(numero > 10 || numero < 0) {
+                alert("Digite um número de 1 a 10");
+            } else {
+                while(contador <= 10) {
+                    var tabuada = numero * contador;
+
+                    //lembrar do += para concatenar os resultados!
+                    document.getElementById("resultado").innerHTML = texto+= + numero + "X" + contador + "=" + tabuada + "<br>";
+
+                    contador++;
+
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Futebol</title>
+</head>
+<body>
+    
+    <script>
+        
+        function comparar() {
+            
+            var sorteio = Math.round(Math.random() * 10);
+            var input = parseInt(document.getElementById("campo1").value);
+            
+            if(input == sorteio) {
+                document.getElementById("resultado").innerHTML = "certo";
+            } else if (input > sorteio) {
+                document.getElementById("resultado").innerHTML = "maior";
+            } else {
+                document.getElementById("resultado").innerHTML = "menor";
+            }
+        }
+
+    </script>
+
+    <input type="text" id="campo1" placeholder="número inteiro">
+    <button onclick="comparar()">Compare com o meu segredo</button> 
+
+    <p id="resultado"></p>
+
+    
+    
+</body>
+</html>
