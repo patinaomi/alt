@@ -5,24 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <input type="text" id="campo">
-    <button onclick="pares()">Calcular</button>
+    <button onclick="tabuada()">Tabuada</button>
 
     <p id="resultado"></p>
-
+ 
     <script>
-        function pares() {
-            var numero = parseInt(document.getElementById.("campo").value);
+        function tabuada() {
             var concat = "";
-
-            while(numero <= 100) {
-                
-                    document.getElementById("resultado").innerHTML = concat+= + numero;
-                
-                numero++;
+            var num = document.getElementById("campo").value;
+            
+            for(var i=1; i<=10; i++) {
+                var tabuada = i * num;
+                document.getElementById("resultado").innerHTML= concat+= + num + "X" + i + "=" + tabuada + "<br>";
             }
         }
     </script>
-
 </head>
 <body>
     

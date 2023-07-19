@@ -9,7 +9,7 @@
 
     </style>
 <body>
-    <input type="text" id="campo1">
+    <input type="text" id="campo1" placeholder="digite aqui">
 
     <button onclick="palpite()">Palpite</button>
     <p id="resultado"></p>
@@ -20,33 +20,25 @@
         function palpite() {
             var numero = document.getElementById("campo1").value;
             var tentativa = 1;
-
-            
-            while(tentativa <= 3) {
+           
                 if(numero > 10 || numero < 0) {
-
                     document.getElementById("resultado").innerHTML = "Digite um número maior que 0"; 
-                    break;
 
                 } else if(numero == sorteio) {
                         document.getElementById("resultado").innerHTML = "parabéns você acertou, o número pensado foi " + sorteio; 
-                        break;
             
                     } else {
                         if(numero > sorteio) {
                             document.getElementById("resultado").innerHTML = "você errou, o número pensado foi maior que o sorteado"; 
-                            tentativa++;            
+          
                             
                         } else {
-                            document.getElementById("resultado").innerHTML = "você errou, o número pensado foi menor que o sorteado"; 
-                            tentativa++;            
+                            document.getElementById("resultado").innerHTML = "você errou, o número pensado foi menor que o sorteado";      
                         }
                     }
+                    document.getElementById("campo1").value = "";
 
-                }
-                
-            }
-            alert("ERROU!");
+        }
         
 
     </script>
