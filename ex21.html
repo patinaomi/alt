@@ -18,9 +18,13 @@
 
             var achou = false;
             
-            for (i = 1; i <= 3; i++) {
+            for (i = 0; i <= 3; i++) {
                 var numAleatorio = Math.round(Math.random() * 10);
-                meuVetor[i] = numAleatorio;
+
+                if(numAleatorio !== 0) {
+                    meuVetor[i] = numAleatorio;
+                    
+                }
 
                 
                 if(input.value == meuVetor[i]) {
@@ -37,7 +41,7 @@
             input.value = "";
             input.focus();
 
-            document.write(meuVetor[i]);
+            console.log(meuVetor);
         }
     </script>
 </body>
