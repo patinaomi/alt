@@ -6,23 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <script>
-    var ingredientes = [];
 
-    var quantidade = parseInt(prompt("Quantos ingredientes você vai adicionar?"));
+    <script>
+    var numAleatorios = [];
+
+    var quantidade = parseInt(prompt("Quantos números vai adicionar?"));
 
     var contador = 1;
 
     while( contador <= quantidade) {
 
-        var ingrediente = prompt("Informe o ingrediente " + contador);
+
+        var numero = Math.floor(Math.random() * 10) + 1;
 
         var existe = false;
 
-        for( var posicao = 0; posicao < ingredientes.length; posicao++) {
+        for( var posicao = 0; posicao < numAleatorios.length; posicao++) {
 
-            if( ingredientes[posicao] == ingrediente) {
+            if( numAleatorios[posicao] == numero) {
 
                 existe = true;
                 break;
@@ -31,12 +32,14 @@
 
         if( existe == false) {
 
-            ingredientes.push(ingrediente);
+            numAleatorios.push(numero);
             contador++;
         }
     }
 
-    console.log(ingredientes);
+    console.log(numAleatorios);
+
+
 </script>
 </body>
 </html>
