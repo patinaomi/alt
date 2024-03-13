@@ -10,7 +10,7 @@ Repositório dedicado para armazenar os exercícios no curso de Fundamentos de B
 * [Semana 1](#semana-1)
   * [Aula 1/15 - Apresentação do Curso](#aula-120---apresentação-do-curso)
   * [Aula 2/15 - Introdução a Big Data](#aula-220---introdução-a-big-data)
-  * [Aula 3/15 - Tipos de Variáveis, Entrada de Dados](#aula-320---tipos-de-variáveis-entrada-de-dados)
+  * [Aula 3/15 - Revisão Python](#aula-320---revisão-python)
   * [Aula 4/15 - Operadores Aritméticos e Relacionais](#aula-420---operadores-aritméticos-e-relacionais)
   * [Aula 5/15 - Estruturas Condicionais](#aula-520---estruturas-condicionais)
 * [Semana 2](#semana-2)
@@ -32,18 +32,18 @@ Repositório dedicado para armazenar os exercícios no curso de Fundamentos de B
 
 ### Aula 1/15 - Apresentação do Curso
 
-### Aula 2/15 - Introdução a Lógica de Programação
+### Aula 2/15 - Introdução a Big Data
+
+### Aula 3/15 - Revisão Python
 
 #### [Exercicio 001](semana1/001.py)
-Crie um programa que escreva “Hello World” na tela
+Exercícios de Revisão para Python (Operadores, Condicionais, Funções, etc.)
 
 #### [Exercicio 002](semana1/002.py)
-Criar uma árvore de Natal usando print.
-
-### Aula 3/15 - Tipos de Variáveis, Entrada de Dados
+Criar uma calculadora utilizando funções.
 
 #### [Exercicio 003](semana1/003.py)
-Crie um programa para efetuar a leitura de um número inteiro e apresente o resultado do quadrado deste número
+Crie um programa para calcular a média de notas de um aluno.
 
 #### [Exercicio 004](semana1/004.py)
 Escreva um programa que leia dois caracteres e imprima-os na tela da seguinte forma: O usuário digitou o caracter1 e caracter2
