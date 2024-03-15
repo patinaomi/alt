@@ -11,8 +11,8 @@ Repositório dedicado para armazenar os exercícios no curso de Fundamentos de B
   * [Aula 1/15 - Apresentação do Curso](#aula-120---apresentação-do-curso)
   * [Aula 2/15 - Introdução a Big Data](#aula-220---introdução-a-big-data)
   * [Aula 3/15 - Revisão Python](#aula-320---revisão-python)
-  * [Aula 4/15 - Operadores Aritméticos e Relacionais](#aula-420---operadores-aritméticos-e-relacionais)
-  * [Aula 5/15 - Estruturas Condicionais](#aula-520---estruturas-condicionais)
+  * [Aula 4/15 - Continuação Python](#aula-420---operadores-aritméticos-e-relacionais)
+  * [Aula 5/15 - Bibliotecas Python](#aula-520---estruturas-condicionais)
 * [Semana 2](#semana-2)
   * [Aula 6/15 - Estrutura Condicional elif](#aula-620---estrutura-condicional-elif)
   * [Aula 7/15 - Estrutura de repetição While e For](#aula-720---estrutura-de-repetição-while-e-for)
@@ -45,33 +45,35 @@ Criar uma calculadora utilizando funções.
 #### [Exercicio 003](semana1/003.py)
 Crie um programa para calcular a média de notas de um aluno.
 
+### Aula 4/15 - Continuação Python
+
 #### [Exercicio 004](semana1/004.py)
-Escreva um programa que leia dois caracteres e imprima-os na tela da seguinte forma: O usuário digitou o caracter1 e caracter2
+Exemplo de uso de estruturas de decisões.
 
 #### [Exercicio 005](semana1/005.py)
-Crie um programa que leia um número inteiro e imprimir seu sucessor e seu antecessor
+Exemplo de uso do loop while.
 
 #### [Exercicio 006](semana1/006.py)
-Crie um programa para entrar com a base e a altura de um retângulo e imprimir respectivamente o perímetro e a área correspondente
+Exemplo de uso do loop for.
 
 #### [Exercicio 007](semana1/007.py)
-Crie um programa que dados o valor, a taxa e o tempo, efetuar o cálculo do valor de uma prestação em atraso, utilizando a fórmula prestação = valor + (valor * (taxa/100) * tempo)
-
-### Aula 4/15 - Operadores Aritméticos e Relacionais
+Crie um programa para armazenar dados em uma lista.
 
 #### [Exercicio 008](semana1/008.py)
-Dado a nota das provas P1, P2 e P3, calcular a média (aritmética) das notas do aluno.
+Verificar a quantidade de elementos em uma lista.
+
+### Aula 5/15 - Bibliotecas Python
 
 #### [Exercicio 009](semana1/009.py)
-Escreva um código que calcule a hipotenusa de um triângulo retângulo, cujos catetos são a=4 e b=3
+Faça uma função que receba uma string e imprima esta string na forma vertical.Dica: uma String do python funciona como uma lista. Crie também um código para testar sua função.
 
 #### [Exercicio 010](semana1/010.py)
-Solicite ao usuário o valor do salário atual (numérico com decimais), em seguida, solicite o percentual de aumento (numérico com decimais) e imprima o valor do salário atualizado
+
 
 #### [Exercicio 011](semana1/011.py)
 Crie um programa e declare uma constante PI (use 4 casas após a vírgula). Dados o raio e a altura, calcular e apresentar o valor do volume de uma lata de óleo, utilizando a fórmula: volume = PI * r² * altura
 
-### Aula 5/15 - Estruturas Condicionais
+
 
 #### [Exercicio 012](semana1/012.py)
 Faça um programa que leia 2 notas de um aluno, calcule a média e imprima aprovado ou reprovado (para ser aprovado a média deve ser no mínimo 6)
