@@ -14,8 +14,8 @@ Repositório dedicado para armazenar os exercícios no curso de Fundamentos de B
   * [Aula 4/15 - Continuação Python](#aula-415---continuação-python)
   * [Aula 5/15 - Bibliotecas Python](#aula-515---bibliotecas-python)
 * [Semana 2](#semana-2)
-  * [Aula 6/15 - Estrutura Condicional elif](#aula-620---estrutura-condicional-elif)
-  * [Aula 7/15 - Estrutura de repetição While e For](#aula-720---estrutura-de-repetição-while-e-for)
+  * [Aula 6/15 - Introdução a Banco de Dados](#aula-615---introdução-a-banco-de-dados)
+  * [Aula 7/15 - Continuação Banco de Dados](#aula-715---continuação-banco-de-dados)
   * [Aula 8/15 - Listas](#aula-820---listas)
   * [Aula 9/15 - Continuação Listas](#aula-920---continuação-listas)
   * [Aula 10/15 - Tuplas](#aula-1020---tuplas)
@@ -74,7 +74,7 @@ Faça uma função que receba uma string e imprima esta string na forma vertical
 
 ### Aula 7/15 - Continuação Banco de Dados
 
-#### [Exercicio 010](semana1/010.py)
+#### [Arquivos Banco de Dados](semana2/arquivos-banco)
 
 
 #### [Exercicio 011](semana1/011.py)
