@@ -62,10 +62,17 @@ Crie um programa para armazenar dados em uma lista.
 #### [Exercicio 008](semana1/008.py)
 Verificar a quantidade de elementos em uma lista.
 
-### Aula 5/15 - Bibliotecas Python
-
 #### [Exercicio 009](semana1/009.py)
 Faça uma função que receba uma string e imprima esta string na forma vertical.Dica: uma String do python funciona como uma lista. Crie também um código para testar sua função.
+
+
+### Aula 5/15 - Bibliotecas Python
+
+## Semana 2
+
+### Aula 6/15 - Introdução a Banco de Dados
+
+### Aula 7/15 - Continuação Banco de Dados
 
 #### [Exercicio 010](semana1/010.py)
 
@@ -92,7 +99,7 @@ Faça um algoritmo para ler dois números inteiros e informar se estes são igua
 
 [:arrow_up: voltar para o índice :arrow_up:](#índice)
 
-## Semana 2
+
 
 ### Aula 6/15 - Estrutura Condicional elif
 
